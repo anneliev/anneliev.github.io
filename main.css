@@ -222,8 +222,7 @@ h2{
 	background-color: #98cb00;
 	color: #FFF;
 }
-
-.aloha p, .nordic p{
+.aloha p, .nordic p, .tundra p{
 	font-family: "open_sansregular", sans-serif;
 	width: 40em;
 	height: 3em;
@@ -234,7 +233,9 @@ h2{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
+}
+.tundra p{
+	color: #000;
 }
 input{
 	width: 22em;
