@@ -138,11 +138,6 @@ h2{
 	border: 0.2em outset;
 }
 
-
-
-.tundra p{
-	color: #000;
-}
 .aloha{
 	width: 50em;
 	height: 15em;
@@ -222,6 +217,7 @@ h2{
 	background-color: #98cb00;
 	color: #FFF;
 }
+
 .aloha p, .nordic p, .tundra p{
 	font-family: "open_sansregular", sans-serif;
 	width: 40em;
