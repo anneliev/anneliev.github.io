@@ -1,258 +1,167 @@
 @font-face {
-    font-family: 'montserrat';
-    src: url('fonts/montserrat-bold-webfont.woff2') format('woff2'),
-         url('fonts/montserrat-bold-webfont.woff') format('woff');
+    font-family: 'caviarbold';
+    src: url('caviar_dreams_bold-webfont.woff2') format('woff2'),
+         url('caviar_dreams_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
-    font-family: 'open_sansregular';
-    src: url('fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('fonts/opensans-regular-webfont.woff') format('woff');
+    font-family: 'caviar';
+    src: url('caviardreams-webfont.woff2') format('woff2'),
+         url('caviardreams-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
- @font-face {
-    font-family: 'open_sanslight';
-    src: url('fonts/opensans-light-webfont.woff2') format('woff2'),
-         url('fonts/opensans-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body{
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "caviar";
 }
-
-a{
-	text-decoration: none;
-	color: #000;
-}
-figure{
-	margin: 0;
-	padding: 0;
-}
-
 header{
-	margin:0;
-	padding:0;
-	display: flex;
-	flex-flow: row wrap;
-	background: url("pics/plant-earth-head3.jpg");
-	background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #007ea7;
+    color: #FFF;
+    font-family: "caviarbold";
+    font-size: 1.5em;
 }
-
+header h2{
+    margin: 0;
+}
 h1{
-	margin: 0.3em;
-	margin-left: 0.5em;
-	padding: 0;
-	font-family: "montserrat", sans-serif;
+    margin: 0;
 
-	font-size: 5em;
-	letter-spacing: 0.1em;
-	color: #2A3C24;
-}
-
-/*samma font-family och margin för alla h2*/
-h2{
-	margin-top: 1em;
-	font-family: "montserrat", sans-serif;
-	color: #2A3C24;
-}
-
-/*samma font-family, flex, border och padding för alla articles*/
-.home p, .about p{
-	font-family: "open_sansregular", sans-serif;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border: 0.2em outset;
-	padding: 3em;	
-}
-
-/*navbar och footer har samma storlek*/
-.navbar, .footer{
-	padding: 1em 4em 1em 4em;
-	margin: 0;
-	display: flex;
-	justify-content: space-around;
 }
 .navbar{
-	background-color: #a1c349;
-	font-family: "montserrat", sans-serif; 
-	font-size: 1.4em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0em 8em 0em 11em;
+    margin: 0;
+    background-color: #00a8e8;
+    color: #FFF;
 }
-.footer{
-	background-color: #cad593;
-	font-family: 'open_sanslight', sans-serif; 
-	font-size: 1em;
+.navbar-small{
+    display: none;
 }
-
-.home-p{
-	width: 30em;
-	height: 12em;
+footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #007ea7;
+    color: #FFF;
+    padding: 0.6em;
 }
-
-.home{
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 9em;
-}
-.home img{
-	height: 18em;
-}
-
-/*index, prices, contact*/
-.main{
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-/*index och contact*/
-.freeh2{
-	display: flex;
-	align-items: center;
-}
-
-/*prices, themes och about main section*/
-.column{
-	display: flex;
-	flex-flow: column wrap;
-	align-items: center;
-}
-
-.prices-table{
-	margin-top: 3em;
-	margin-bottom: 5em;
-	width: 50em;
-	border: 0.2em outset;
-}
-
-.aloha{
-	width: 50em;
-	height: 15em;
-	margin-bottom: 6em;
-	margin-top: 3em;
-	background: url("pics/coconuts3.jpg");
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border: 0.2em outset;
-}
-.tundra{
-	width: 50em;
-	height: 15em;
-	margin-bottom: 6em;
-	background: url("pics/tundra4.jpg");
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border: 0.2em outset;
-}
-.nordic{
-	width: 50em;
-	height: 15em;
-	margin-bottom: 6em;
-	background: url("pics/tallskog2.jpg");
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	border: 0.2em outset;
-}
-
-/*h2 storlek och färg för themes*/
-.themesh2{
-	font-size: 4em;
-	color: #FFF;
-}
-
- .p-about{
-	width: 30em;
-	height: 7em;
-	margin-bottom: 3em;
-	margin-top: 3em;	
-}
-.contact-main {
-	display: flex;
-	flex-flow: column wrap;
-	align-items: flex-start;
-}
-.contact{
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	justify-content: space-around;
-	font-family: "open_sansregular", sans-serif;
-}
-
-.contact-list{
-	width: 15em;
-	height: 8em;
-	margin-right: 3em;
-	padding: 3em;
-	border: 0.2em outset;	
-}
-.mail{
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	margin-bottom: 5em;
-	margin-right: 7em;
-	font-family: "open_sansregular", sans-serif;
-}
-.submit{
-	background-color: #98cb00;
-	color: #FFF;
-}
-
-.aloha p, .nordic p, .tundra p{
-	font-family: "open_sansregular", sans-serif;
-	width: 40em;
-	height: 3em;
-	padding: 1.5em;
-	margin-bottom: 4em;
-	color: #FFF;
-	font-weight: 700;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.tundra p{
-	color: #000;
-}
-input{
-	width: 22em;
-	height: 2.5em;
-}
-
-textarea, .submit{
-	font-family: "open_sansregular", sans-serif;
-}
-table, th, td{
-	font-family: "open_sansregular", sans-serif;
-	padding: 0.6em;
-	border: 0.02em solid;
-	border-collapse: collapse;
-}
-tr:nth-child(odd){
-	background-color: #cad593;
-}
-th{
-	background-color: #FFF;
+footer p{
+    margin: 0;
 }
 ul{
-	list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 8em 0 8em;
+    padding: 0;
+    height: 2em;
+    list-style: none;
+}
+main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+aside{
+    display: flex;
+    background-color: #00171f;
+    color: #FFF;
+    width: 400px;
+}
+.divs{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background-color: #003459;
+}
+.square{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 20em;
+    height: 13em;
+    margin: 2em 5em 2em 5em;
+    padding: 2em;
+    background-color: #00a8e8;
+}
+.square-hidden{
+    width: 20em;
+    height: 12em;
+    margin: 2em 5em 2em 5em;
+    padding: 2em;
+    background-color: #003459;
+    color: #003459;
+}
+a{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+ul a{
+    color: #FFF;
+}
+@media (max-width: 40em){
+    .navbar{
+        display: none;
+    }
+    .navbar-small{  
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        border: none;
+        width: 100%;
+        height: 100%;
+        background-color: #00a8e8;
+        color: #FFF;
+        font-size: 1.2em;
+    }
+    .dropdown{
+        display: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+        width: 100%;
+        height: 100%;
+        background-color: #00a8e8;
+        color: #FFF;
+    }
+    .navbar-small:hover .dropdown{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .square{
+        width: 15em;
+        height: 17em;
+        font-size: 0.9em;
+        padding: 0.5em;
+    }
+    header{
+        font-size: 1em;
+    }
+}
+@media (min-width: 40em) and (max-width: 60em){
+    nav{
+        font-size: 0.7em;
+    }
+    header{
+        font-size: 1.2em;
+    }
 }
