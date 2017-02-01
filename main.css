@@ -16,10 +16,17 @@ body {
   font-family: "caviar", sans-serif; }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
   background-color: #C0B283;
@@ -32,9 +39,13 @@ h1 {
   margin: 0; }
 
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 0em 8em 0em 11em;
   margin: 0;
   border: 1px #000 solid;
@@ -45,29 +56,48 @@ h1 {
   display: none; }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%; }
 
 aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
   background-color: #C0B283;
   padding: 0.5em;
   width: 60%;
   color: #FFF; }
 
 .divs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center; }
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .square {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 30%;
   height: 13em;
   margin: 2em 2em 1em 0;
@@ -89,14 +119,21 @@ aside {
   background-color: #F4F4F4; }
 
 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   color: #000; }
 
 ul {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 2em;
   list-style: none; }
   ul a {
@@ -107,8 +144,12 @@ ul {
     color: #C0B283; }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   border: 1px solid;
   padding: 0.6em; }
 
@@ -126,8 +167,11 @@ footer p {
     display: none; }
 
   .navbar-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
     padding: 1%;
     border: none;
     width: initial;
@@ -146,10 +190,17 @@ footer p {
     color: #FFF; }
 
   .navbar-small:hover .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    justify-content: flex-start; }
+    -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
 
   .square {
     width: 100%;
@@ -158,7 +209,9 @@ footer p {
     margin: 0; }
 
   .three {
-    order: 2; }
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
 
   .diff-color {
     background-color: #DCD0C0; }
@@ -180,5 +233,3 @@ footer p {
 
   aside {
     width: 80%; } }
-
-/*# sourceMappingURL=main.css.map */

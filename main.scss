@@ -21,16 +21,26 @@ $div1-color: #DCD0C0;
 $div2-color: #F4F4F4;
 $text-color: #FFF;
 @mixin flex-row{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
 }
 @mixin flex-col{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
 }
 @mixin center{
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 @mixin mp0{
     margin: 0;
@@ -57,7 +67,8 @@ h1{
 }
 .navbar{
     @include flex-row;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 0em 8em 0em 11em;
     margin: 0;
     border: 1px #000 solid;
@@ -69,6 +80,8 @@ h1{
     display: none;
 }
 main{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
@@ -111,12 +124,16 @@ aside{
 }
 a{
     @include flex-col;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-decoration: none;
     color: #000;
 }
 ul {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 2em;
     list-style: none;
     a{
@@ -131,8 +148,12 @@ ul {
     
 }
 footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     border: 1px solid;
     padding: 0.6em;
 }
@@ -172,8 +193,12 @@ footer p{
     .navbar-small:hover {
         .dropdown{
             @include flex-col;
-            align-items: flex-start;
-            justify-content: flex-start;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
         }
     }
     .square{
@@ -185,7 +210,9 @@ footer p{
     }
    
     .three{
-        order: 2;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
     }
     .diff-color{
         background-color: $div1-color;
